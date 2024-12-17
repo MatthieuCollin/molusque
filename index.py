@@ -3,7 +3,9 @@ import http.server
 import socketserver
 import requests
 from datetime import date
-import csv
+from flask import Flask
+
+app = Flask(__name__)
 
 f = open('index.html', 'w')
 
@@ -59,11 +61,17 @@ def averageDay(rows):
         data = getRowData(row)
         mark += round(data[1]/2)
     return str(round(mark / 24))
+
+
         
 
 getData()
 # writing the code into the file 
 f.write(html_template) 
+
+@app.route("/api")
+def dataApi():
+    return "<p>Hello, World!</p>"
 
 # close the file 
 f.close() 
