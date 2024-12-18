@@ -1,0 +1,500 @@
+   17  python3 index.py
+   18  pip install flask && python3 index.py
+   19  sudo apt-get pip
+   20  sudo apt-get install pip3
+   21  sudo apt-get install pip
+   22  pip install flask && python3 index.py
+   23  ls
+   24  nano index.py
+   25  nano index.py
+   26  python3 index.py
+   27  nano index.py
+   28  python3 index.py
+   29  python3 index.py
+   30  python3 index.py
+   31  nano index.py
+   32  python3 index.py
+   33  netstat -tupan | grep LISTEN
+   34  python3 index.py & 
+   35  netstat -tupan | grep LISTEN
+   36  mkdir /etc/systemd/system/molusque.service.d
+   37  cd /etc/systemd/system/molusque.service.d
+   38  ls
+   39  nano local.conf
+   40  nano local.conf
+   41  systemctl edit molusque.service
+   42  systemctl edit molusque.service.d
+   43  systemctl edit molusque
+   44  ls
+   45  cd ../
+   46  ls
+   47  mv molusque.service.d/ molusque.service
+   48  ls
+   49  systemctl edit molusque
+   50  rm -r molusque.service/
+   51  ls
+   52  systemctl edit molusque
+   53  systemctl edit --force --full molusque.service
+   54  mkdir molusque.service.d
+   55  ls
+   56  systemctl start molusque.service.d/
+   57  systemctl start molusque
+   58  mv molusque.service.d/ molusque.service
+   59  systemctl start molusque
+   60  systemctl status molusque
+   61  ls
+   62  cp syslog.service
+   63  cp syslog.service molusque.service
+   64  ls
+   65  nano molusque.service
+   66  rm -r molusque.service/
+   67  nano molusque.service
+   68  rm -r molusque.service/
+   69  ls
+   70  rm molusque.service/
+   71  rm molusque.service
+   72  cp syslog.service molusque.service
+   73  nano molusque.service
+   74  systemctl status molusque
+   75  systemctl start molusque
+   76  systemctl status molusque
+   77  systemctl start molusque
+   78  systemctl start molusque
+   79  python3 ~/molusque/index.py
+   80  reboot
+   81  systemctl start molusque
+   82  systemctl status molusque
+   83  cd /etc/systemd/system/molusque.service.d
+   84  cd /etc/systemd/system/
+   85  nano molusque.service
+   86  systemctl start molusque
+   87  systemctl daemon-reload
+   88  systemctl start molusque
+   89  systemctl status molusque
+   90  cd /home/
+   91  ls
+   92  ls
+   93  cd ~
+   94  ls
+   95  pwd
+   96  /root/molusque/
+   97  nano molusque.service
+   98  systemctl edit molusque
+   99  systemctl start molusque
+  100  systemctl status molusque
+  101  ls
+  102  cd /etc/systemd/system/
+  103  ls
+  104  nano molusque.service
+  105  systemctl start molusque
+  106  systemctl daemon-reload
+  107  systemctl start molusque
+  108  systemctl status molusque
+  109  nano molusque.service
+  110  systemctl daemon-reload
+  111  systemctl start molusque
+  112  nano molusque.service
+  113  systemctl daemon-reload
+  114  systemctl start molusque
+  115  nano molusque.service
+  116  systemctl daemon-reload
+  117  systemctl start molusque
+  118  ad
+  119  nano molusque.service
+  120  systemctl start molusque &
+  121  systemctl start molusque &
+  122  nano molusque.service
+  123  systemctl daemon-reload
+  124  systemctl start molusque &
+  125  systemctl status molusque
+  126  nano molusque.service
+  127  systemctl daemon-reload
+  128  systemctl start molusque &
+  129  systemctl status molusque
+  130  nano molusque.service
+  131  systemctl daemon-reload
+  132  systemctl start molusque &
+  133  systemctl status molusque
+  134  nano molusque.service
+  135  nano molusque.service
+  136  systemctl daemon-reload
+  137  systemctl start molusque &
+  138  systemctl status molusque
+  139  sudo systemctl start molusque &
+  140  nano molusque.service
+  141  sudo systemctl start molusque &
+  142  systemctl status molusque
+  143  systemctl daemon-reload
+  144  sudo systemctl start molusque &
+  145  systemctl status molusque
+  146  nano molusque.service
+  147  systemctl daemon-reload
+  148  systemctl start molusque &
+  149  systemctl status molusque
+  150  ls -l /root/molusque
+  151  chmod +x /root/molusque
+  152  systemctl start molusque &
+  153  systemctl status molusque
+  154  mv /root/molusque /usr/local/bin/molusque
+  155  chmod +x /usr/local/bin/molusque
+  156  nano molusque.service
+  157  systemctl daemon-reload
+  158  systemctl daemon-reload
+  159  systemctl status molusque
+  160  systemctl start molusque &
+  161  systemctl status molusque
+  162  nano molusque.service
+  163  nano molusque.service
+  164  systemctl daemon-reload
+  165  systemctl start molusque &
+  166  systemctl status molusque
+  167  systemctl start molusque 
+  168  systemctl status molusque
+  169  systemctl daemon-reload
+  170  systemctl start molusque
+  171  systemctl status molusque
+  172  nano molusque.service
+  173  /usr/local/bin/molusque
+  174  cd /usr/local/bin/molusque
+  175  ls
+  176  flask -m app run 
+  177  pip install flask && python3
+  178  flask -m app run
+  179  python3 index.py & 
+  180  python index.py
+  181  python3 index.py 
+  182  flask -v
+  183  pip install Flask
+  184  flask -v
+  185  python3 flask -v
+  186   python3 -m venv .venv
+  187  sudo  python3 -m venv .venv
+  188  sudo apt-get install python3-venv
+  189  sudo  python3 -m venv .venv
+  190  flask -v
+  191  .venv/bin/activate
+  192  sudo .venv/bin/activate
+  193  sudo . .venv/bin/activate
+  194  flask -v
+  195  flask --help
+  196  flask -m app run
+  197  flask  app run
+  198  flash -app run molusque
+  199  flask -app run molusque
+  200  flask --app run molusque
+  201  flask --app molusque run
+  202  flask --app molusque run
+  203  python3 -m flask
+  204  flask --app run 
+  205  flask --app run molusque
+  206  flask --app molusque run
+  207  flask --app app run 
+  208  export FLASK_APP=app
+  209  flask run 
+  210  export FLASK_APP=index.py
+  211  flask run
+  212  flask run -p 8000
+  213  flask run -h 34.155.222.139 -p 8000
+  214  flask run -h 0.0.0.0 -p 8000
+  215  flask run -h 0.0.0.0 -p 8000 &
+  216  netstat -tupan | grep LISTEN
+  217  nano molusque.service
+  218  cd /etc/systemd/system/
+  219  nano molusque.service
+  220  systemctl daemon-reload
+  221  systemctl start molusque
+  222  systemctl status molusque
+  223  reboot
+  224  systemctl start molusque
+  225  systemctl status molusque
+  226  cd /usr/local/bin/molusque
+  227  flask run -h 0.0.0.0 -p 8000 
+  228  flask run app 
+  229  flask run -h 0.0.0.0 -p 8000
+  230  export FLASK_APP=index.py
+  231  export FLASK_APP=app
+  232  flask run -h 0.0.0.0 -p 8000
+  233  flask run app
+  234  flask run
+  235  flask -v
+  236  flask run -h 0.0.0.0 -p 8000
+  237  flask run
+  238  export FLASK_APP=app
+  239  export FLASK_APP=index.py
+  240  flask run -h 0.0.0.0 -p 8000
+  241  flask run -h 0.0.0.0 -p 8000 &
+  242  netstat -tupan | grep LISTEN
+  243  systemctl status molusque
+  244  /usr/local/bin/molusque flask run -h 0.0.0.0 -p 8000
+  245  nano molusque.service
+  246  cd /etc/systemd/system/
+  247  nano molusque.service
+  248  systemctl daemon-reload
+  249  systemctl start molusque
+  250  systemctl status molusque
+  251  nano molusque.service
+  252  reboot
+  253  systemctl start molusque
+  254  systemctl status molusque
+  255  cd /usr/local/bin/molusque
+  256  nano molusque.service
+  257  cd /etc/systemd/system/
+  258  nano molusque.service
+  259  nano molusque.service
+  260  systemctl daemon-reload
+  261  systemctl start molusque
+  262  systemctl start molusque
+  263  systemctl status molusque
+  264  systemctl start molusque
+  265  systemctl status molusque
+  266  journalctl -u molusque.service
+  267  flask --help
+  268  cd /usr/local/bin/molusque
+  269  flask --help
+  270  flask -m app run
+  271  flask run -h 0.0.0.0 -p 8000 &
+  272  nano molusque.service
+  273  cd /usr/local/bin/molusque
+  274  nano molusque.service
+  275  cd /etc/systemd/system/
+  276  nano molusque.service
+  277  nano molusque.service
+  278  nano molusque.service
+  279  systemctl daemon-reload
+  280  systemctl status molusque
+  281  systemctl start molusque
+  282  systemctl status molusque
+  283  systemctl status molusque
+  284  nano molusque.service
+  285  systemctl daemon-reload
+  286  systemctl start molusque
+  287  systemctl start molusque &
+  288  netstat -tupan | grep LISTEN
+  289  fg
+  290  fg
+  291  netstat -tupan | grep LISTEN
+  292  curl ipconfig.sh
+  293  nano molusque.service
+  294  fg
+  295  systemctl daemon-reload
+  296  systemctl start molusque &
+  297  systemctl stop molusque
+  298  systemctl start molusque &
+  299  fg
+  300  fg
+  301  cd /etc/systemd/system/
+  302  fg
+  303  systemctl stop molusque 
+  304  systemctl start molusque
+  305  systemctl stop molusque
+  306  nano molusque.service
+  307  systemctl daemon-reload
+  308  systemctl start molusque
+  309  systemctl enable molusque
+  310  nano molusque.service
+  311  systemctl enable molusque
+  312  nano molusque.service
+  313  systemctl daemon-reload
+  314  systemctl enable molusque
+  315  nano molusque.service
+  316  systemctl daemon-reload
+  317  systemctl enable molusque
+  318  nano molusque.service
+  319  systemctl daemon-reload
+  320  systemctl enable molusque
+  321  systemctl stop molusque
+  322  systemctl restart molusque 
+  323  systemctl restart molusque
+  324  systemctl restart molusque
+  325  systemctl enable molusque
+  326  systemctl enable molusque
+  327  sudo apt-get install docker
+  328  systemctl status molusque
+  329  systemctl start molusque
+  330  systemctl status molusque
+  331  reboot
+  332  systemctl status molusque
+  333  systemctl start molusque
+  334  systemctl daemon-reload
+  335  systemctl start molusque
+  336  ls
+  337  cd molusque/
+  338  ls
+  339  cd ../
+  340  ls
+  341  cd /usr/local/bin/molusque
+  342  ls
+  343  exit ..
+  344  ls
+  345  cd /usr/local/bin/molusque
+  346  flask run -h 0.0.0.0 -p 8000 
+  347  cd /etc/systemd/system/
+  348  nano molusque.service
+  349  cd /usr/local/bin/molusque
+  350  env APP_FLASK=index.Py
+  351  env APP_FLASK=index.py
+  352  flask run -h 0.0.0.0 -p 8000
+  353  cd /etc/systemd/system/
+  354  nano molusque.service
+  355  systemctl start molusque
+  356  systemctl daemon-reload
+  357  systemctl start molusque
+  358  cd /usr/local/bin/molusque
+  359  flask run -h 0.0.0.0 -p 8000
+  360  env
+  361  env FLASK_APP=index.py
+  362  flask run -h 0.0.0.0 -p 8000
+  363  env
+  364  export FLASK_APP=index.py
+  365  flask run -h 0.0.0.0 -p 8000
+  366  git pull 
+  367  flask run -h 0.0.0.0 -p 8000
+  368  flask run -h 0.0.0.0 -p 8000
+  369  flask run -h 0.0.0.0 -p 8000
+  370  systemctl start molusque
+  371  systemctl stop molusque
+  372  flask run -h 0.0.0.0 -p 8000
+  373  flask run -h 0.0.0.0 -p 8080
+  374  systemctl start molusque
+  375  systemctl restart molusque
+  376  docker -v
+  377  wmdocker -v
+  378  cd ~
+  379   ls
+  380  sudo apt-get install docker
+  381  docker -v
+  382  sudo apt-get install docker-cli
+  383  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  384  # Add Docker's official GPG key:
+  385  sudo apt-get update
+  386  sudo apt-get install ca-certificates curl
+  387  sudo install -m 0755 -d /etc/apt/keyrings
+  388  sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+  389  sudo chmod a+r /etc/apt/keyrings/docker.asc
+  390  # Add the repository to Apt sources:
+  391  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
+  392    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  393  sudo apt-get update
+  394  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  395  sudo docker run hello-world
+  396  docker create --name molusque_container -p 80:80 debian
+  397  docker run molusqe_container
+  398  docker list 
+  399  docker images
+  400  docker ps -a
+  401  docker run molusqe_container
+  402  docker login && docker run molusqe_container
+  403  clear
+  404  docker ps -a
+  405  docker run 1e4434934473
+  406  docker run -i -t 1e4434934473
+  407  sudo docker run molusque_container
+  408  docker ps -a
+  409  clear
+  410  ls
+  411  cd molusque/
+  412  ls
+  413  ls
+  414  cd /usr/local/bin/molusque
+  415  nano Dockerfile
+  416  docker build .
+  417  nano Dockerfile
+  418  docker build .
+  419  nano Dockerfile
+  420  docker build .
+  421  nano Dockerfile
+  422  docker build .
+  423  nano Dockerfile
+  424  nano Dockerfile
+  425  docker build .
+  426  nano Dockerfile
+  427  docker build .
+  428  nano Dockerfile
+  429  docker build .
+  430  nano Dockerfile
+  431  docker build .
+  432  nano Dockerfile
+  433  docker build .
+  434  nano Dockerfile
+  435  docker build .
+  436  docker build .nano Dockerfile
+  437  nano Dockerfile
+  438  cd /usr/local/bin/molusque
+  439  nano Dockerfile
+  440  docker build .
+  441  nano Dockerfile
+  442  docker build .
+  443  nano Dockerfile
+  444  docker build .
+  445  nano Dockerfile
+  446  docker build .
+  447  nano Dockerfile
+  448  docker build .
+  449  nano Dockerfile
+  450  docker build .
+  451  nano Dockerfile
+  452  docker build .
+  453  nano Dockerfile
+  454  docker build .
+  455  nano Dockerfile
+  456  docker build .
+  457  nano Dockerfile
+  458  docker build .
+  459  docker build .
+  460  nano Dockerfile
+  461  docker build .
+  462  nano Dockerfile
+  463  cd /usr/local/bin/molusque
+  464  ls
+  465  nano Dockerfile
+  466  nano Dockerfile
+  467  docker build .
+  468  nano Dockerfile
+  469  docker build .
+  470  pip install Flask
+  471  nano Dockerfile
+  472  docker build .
+  473  docker build .
+  474  docker ps -a
+  475  docker container
+  476  docker ls
+  477  docker container ls
+  478  docker run -i -t 1e4434934473
+  479  docker ps -a
+  480  docker build .
+  481  gcloud auth configure-docker europe-west9-docker.pkg.dev
+  482  docker images
+  483  docker tag 0b8c4980f1de molusque
+  484  docker images
+  485  docker push europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  486  docker images
+  487  docker push europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  488  docker push europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  489  docker tag 0b8c4980f1de europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  490  docker push europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  491  gcloud run services list | grep student-yann
+  492  gcloud run deploy 
+  493  gcloud run services update
+  494  gcloud run services list | grep student-yann
+  495  gcloud config get-value project
+  496  gcloud builds submit --region=europe-west9 --tag europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  497  cd /usr/local/bin/molusque
+  498  gcloud builds submit --region=europe-west9 --tag europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  499  gcloud run deploy
+  500  gcloud run services list | grep student-yann
+  501  gcloud run deploy --help 
+  502  gcloud run services list | grep student-matthieu
+  503  gcloud run service-student-matthieu-preprod --image=europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  504  gcloud run deploy service-student-matthieu-preprod --image=europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  505  docker run europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque
+  506  nano Dockerfile
+  507  docker build .
+  508  docker images
+  509  docker rmi 0b8c4980f1de
+  510  docker tag a5757296af49 europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque-fixed
+  511  docker push europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque-fix
+  512  docker images
+  513  docker push europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque-fixed
+  514  gcloud run deploy service-student-matthieu-preprod --image=europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/molusque-fixed
+  515  history 
+  516  history > history.txt
