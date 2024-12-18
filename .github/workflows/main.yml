@@ -3,13 +3,25 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   build:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
+
     steps:
-      - run: git pull
-      - run: echo "🎉 Lancement du dockerFile 💀"
-      - run: docker build -t europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/${{ github.event.head_commit.message }} .
-      - run: echo "🐧 Push de l'image dans le registery 🧌"
-      - run: docker push europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/${{ github.event.head_commit.message }}
-      - run: echo "Deploy de l'image sur GCLOUD 🔫 !
-      - run: gcloud run deploy service-student-matthieu-preprod --region=europe-west9 --image=europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/${{ github.event.head_commit.message }}
-      - run: echo "🖥️ Tada c'est fini 🥇"
+      - name: Connexion au serveur
+      - env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      - run: |
+          # Create the SSH directory
+          mkdir -p ~/.ssh
+          
+          # Add the private key to a file
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          
+          # Verify and add the server to known hosts
+          ssh-keyscan -H yourserver.com >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+
+    - name: Run Deployment Script
+          run: |
+            ssh root@34.155.74.196 "bash /usr/local/bin/scripts/molusque-actions.sh ${{ github.event.head_commit.message }}  
