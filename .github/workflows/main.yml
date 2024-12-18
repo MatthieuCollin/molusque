@@ -13,14 +13,12 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
-          # Create the SSH directory
+          
           mkdir -p ~/.ssh
           
-          # Add the private key to a file
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           
-          # Verify and add the server to known hosts
           ssh-keyscan -H 34.155.74.196 >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
