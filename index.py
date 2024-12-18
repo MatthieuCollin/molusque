@@ -10,15 +10,6 @@ app = Flask(__name__)
 f = open('index.html', 'w')
 
 
-html_template = """<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <h2>Site de la mairie trop bien fait</h2>
-    <ul>
-"""
-
 def headRequest():
     url = "https://storage.googleapis.com/mollusques-caen/data.csv"
     # En-têtes pour spécifier la plage de bytes
@@ -26,26 +17,21 @@ def headRequest():
     return int(response.headers.get('Content-Length'))
 
 def getData(): 
-    global html_template
     url = "https://storage.googleapis.com/mollusques-caen/data.csv"
     # En-têtes pour spécifier la plage de bytes
     range_requests = "bytes=" + str(headRequest() - 32 * 24) + "-" + str(headRequest())
     headers = {"Range": range_requests}
     # Faire la requête GET avec la plage de bytes
     response = requests.get(url, headers=headers)
+    data = 0
     if response.status_code == 206 :
         rows = response.text.splitlines()
-        generateCurrentMark(rows)
-        html_template += """
-        </ul>
-        </body> 
-        </html> """
+        data = averageDay(rows)
         
-    return html_template
+    return data
 
 def generateCurrentMark( rows):
-    global html_template
-    html_template += "<p> La note du " + str(date.today) + "est de " + averageDay(rows)
+    return "<p> La note du " + str(date.today) + "est de " + averageDay(rows)
             
 def getRowData(row):
     pattern = r"^(.*?),(.*)$"
@@ -62,24 +48,13 @@ def averageDay(rows):
         mark += round(data[1]/2)
     return str(round(mark / 24))
 
-
-        
-
-getData()
-# writing the code into the file 
-f.write(html_template) 
-
 @app.route("/api")
 def dataApi():
     return "<p>Hello, World!</p>"
 
+@app.route("/")
+def homepage():  
+    return "<p> La note du " + "est de " + getData() + "</p>"
+
 # close the file 
 f.close() 
-
-PORT = 8080
-Handler = http.server.SimpleHTTPRequestHandler
-
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
-    print("serving at port", PORT)
-    httpd.serve_forever()
-    
