@@ -21,4 +21,4 @@ jobs:
 
       - name: Run Deployment Script
         run: |
-          ssh root@34.155.74.196 "bash /usr/local/bin/scripts/molusque-actions.sh '${{ github.event.head_commit.message }}'"
+          ssh -i $SSH_PRIVATE_KEY root@34.155.74.196 "bash /usr/local/bin/scripts/molusque-actions.sh '${{ github.event.head_commit.message }}'"
