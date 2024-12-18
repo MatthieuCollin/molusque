@@ -1,4 +1,4 @@
-name: CICD de la mort qui tue
+name: CICD de la mort qzui tue
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on: 
