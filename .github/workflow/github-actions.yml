@@ -2,16 +2,14 @@ name: CICD de la mort qui tue
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: debian-latest
+  build
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "�  CI/CD de la mort qui  tue !
-      - name: Check out repository code
-      - uses: actions/checkout@v4
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: Recup du dernier commit
       - run: git pull
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "🎉 Lancement du dockerFile 💀"
+      - run: docker build -t europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/${{ github.event.head_commit.message }} .
+      - run: echo "🐧 Push de l'image dans le registery 🧌"
+      - run: docker push europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/${{ github.event.head_commit.message }}
+      - run: echo "Deploy de l'image sur GCLOUD 🔫 !
+      - run: gcloud run deploy service-student-matthieu-preprod --region=europe-west9 --image=europe-west9-docker.pkg.dev/sandbox-444912/student-matthieu/${{ github.event.head_commit.message }}
+      - run: echo "🖥️ Tada c'est fini 🥇"
