@@ -31,7 +31,7 @@ def getData():
     return data
 
 def generateCurrentMark( rows):
-    return "<p> La note du 23/11/2001" + str(date.today) + "est de " + averageDay(rows)
+    return "<p> La test du 23/11/2001" + str(date.today) + "est de " + averageDay(rows)
             
 def getRowData(row):
     pattern = r"^(.*?),(.*)$"
