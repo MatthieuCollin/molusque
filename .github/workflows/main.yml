@@ -1,15 +1,18 @@
 name: CICD de la mort qui tue
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+
+on: 
+  push
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Connexion au serveur
-      - env:
+        env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      - run: |
+        run: |
           # Create the SSH directory
           mkdir -p ~/.ssh
           
@@ -18,10 +21,9 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           
           # Verify and add the server to known hosts
-          ssh-keyscan -H yourserver.com >> ~/.ssh/known_hosts
+          ssh-keyscan -H 34.155.74.196 >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
-
-    - name: Run Deployment Script
-          run: |
-            ssh root@34.155.74.196 "bash /usr/local/bin/scripts/molusque-actions.sh ${{ github.event.head_commit.message }}  
+      - name: Run Deployment Script
+        run: |
+          ssh root@34.155.74.196 "bash /usr/local/bin/scripts/molusque-actions.sh '${{ github.event.head_commit.message }}'"
