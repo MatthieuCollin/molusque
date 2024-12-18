@@ -5,9 +5,8 @@ RUN apt-get update && apt-get install -y \
 
 ENV FLASK_APP=index.py
 
-WORKDIR /usr/local/bin/
-
-RUN git clone https://github.com/MatthieuCollin/molusque
+RUN mkdir /usr/local/bin/molusque
+COPY data.csv index.py index.html /usr/local/bin/molusque
 
 WORKDIR /usr/local/bin/molusque
 
